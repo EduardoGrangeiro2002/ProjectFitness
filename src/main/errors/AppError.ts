@@ -1,0 +1,13 @@
+class AppError {
+    private readonly name: string
+    private readonly message: string
+    private readonly statusCode: number
+
+    constructor(message: string, statusCode = 400) {
+        this.name = "AppError"
+        this.message = message
+        this.statusCode = statusCode
+    }
+}
+
+export default AppError
